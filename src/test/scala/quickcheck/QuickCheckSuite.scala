@@ -27,7 +27,7 @@ class QuickCheckSuite extends FunSuite with Checkers {
     assert(ok, "A bogus heap should NOT satisfy all properties. Try to find the bug!")
   }
 
-/*  test("Binomial heap satisfies properties.") {
+  test("Binomial heap satisfies properties.") {
    check(new QuickCheckHeap with BinomialHeap)
   }
 
@@ -38,17 +38,17 @@ class QuickCheckSuite extends FunSuite with Checkers {
   test("Bogus (2) binomial heap does not satisfy properties.") {
     checkBogus(new QuickCheckHeap with Bogus2BinomialHeap)
   }
-  */
+  
 
   test("Bogus (3) binomial heap does not satisfy properties.") {
     checkBogus(new QuickCheckHeap with Bogus3BinomialHeap)
   }
-/*
+
   test("Bogus (4) binomial heap does not satisfy properties.") {
     checkBogus(new QuickCheckHeap with Bogus4BinomialHeap)
   }
 
   test("Bogus (5) binomial heap does not satisfy properties.") {
     checkBogus(new QuickCheckHeap with Bogus5BinomialHeap)
-  } */
+  } 
 }
